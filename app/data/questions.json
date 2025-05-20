@@ -1,0 +1,182 @@
+[
+  {
+    "port": "20",
+    "protocol": "FTP-DATA",
+    "hint": "File Transfer Protocol Data Channel - Think '20' files being transferred"
+  },
+  {
+    "port": "21",
+    "protocol": "FTP",
+    "hint": "File Transfer Protocol Control Channel - '21' is one more than 20, handles FTP commands"
+  },
+  {
+    "port": "22",
+    "protocol": "SSH",
+    "hint": "Secure Shell - '22' looks like a secure tunnel"
+  },
+  {
+    "port": "23",
+    "protocol": "TELNET",
+    "hint": "Telnet (unencrypted remote access) - '23' comes right after SSH (not secure!)"
+  },
+  {
+    "port": "25",
+    "protocol": "SMTP",
+    "hint": "Simple Mail Transfer Protocol - '25' letters in the mail"
+  },
+  {
+    "port": "53",
+    "protocol": "DNS",
+    "hint": "Domain Name System - '53' like finding an address in a phonebook"
+  },
+  {
+    "port": "67",
+    "protocol": "DHCP (Server)",
+    "hint": "DHCP Server - '67' is when the server gives out IP addresses"
+  },
+  {
+    "port": "68",
+    "protocol": "DHCP (Client)",
+    "hint": "DHCP Client - '68' is when the client receives an IP address"
+  },
+  {
+    "port": "69",
+    "protocol": "TFTP",
+    "hint": "Trivial File Transfer Protocol - '69' is a simplified version of FTP"
+  },
+  {
+    "port": "80",
+    "protocol": "HTTP",
+    "hint": "Hypertext Transfer Protocol - '80' for web browsing"
+  },
+  {
+    "port": "88",
+    "protocol": "Kerberos",
+    "hint": "Kerberos Authentication - '88' looks like a key for authentication"
+  },
+  {
+    "port": "110",
+    "protocol": "POP3",
+    "hint": "Post Office Protocol v3 - '110' for receiving email"
+  },
+  {
+    "port": "119",
+    "protocol": "NNTP",
+    "hint": "Network News Transfer Protocol - '119' for news groups"
+  },
+  {
+    "port": "123",
+    "protocol": "NTP",
+    "hint": "Network Time Protocol - '123' like counting time"
+  },
+  {
+    "port": "135",
+    "protocol": "RPC",
+    "hint": "Remote Procedure Call - '135' for Windows communication"
+  },
+  {
+    "port": "137-139",
+    "protocol": "NetBIOS",
+    "hint": "NetBIOS - Range '137-139' for Windows networking"
+  },
+  {
+    "port": "143",
+    "protocol": "IMAP",
+    "hint": "Internet Message Access Protocol - '143' for advanced email retrieval"
+  },
+  {
+    "port": "161",
+    "protocol": "SNMP",
+    "hint": "Simple Network Management Protocol - '161' for network monitoring"
+  },
+  {
+    "port": "162",
+    "protocol": "SNMP Trap",
+    "hint": "SNMP Trap - '162' receives alerts from SNMP devices"
+  },
+  {
+    "port": "389",
+    "protocol": "LDAP",
+    "hint": "Lightweight Directory Access Protocol - '389' for directory services"
+  },
+  {
+    "port": "443",
+    "protocol": "HTTPS",
+    "hint": "HTTP Secure - '443' for encrypted web browsing (think padlock icon)"
+  },
+  {
+    "port": "445",
+    "protocol": "SMB",
+    "hint": "Server Message Block - '445' for file sharing in Windows"
+  },
+  {
+    "port": "464",
+    "protocol": "Kerberos (password change)",
+    "hint": "Kerberos Password Change - '464' to reset your Kerberos password"
+  },
+  {
+    "port": "465",
+    "protocol": "SMTPS",
+    "hint": "SMTP Secure - '465' for encrypted email sending"
+  },
+  {
+    "port": "514",
+    "protocol": "Syslog",
+    "hint": "Syslog - '514' for system logging"
+  },
+  {
+    "port": "636",
+    "protocol": "LDAPS",
+    "hint": "LDAP Secure - '636' for encrypted directory access"
+  },
+  {
+    "port": "993",
+    "protocol": "IMAPS",
+    "hint": "IMAP Secure - '993' for secure email retrieval"
+  },
+  {
+    "port": "995",
+    "protocol": "POP3S",
+    "hint": "POP3 Secure - '995' for secure email receiving"
+  },
+  {
+    "port": "1433",
+    "protocol": "MS SQL",
+    "hint": "Microsoft SQL Server - '1433' for database connections"
+  },
+  {
+    "port": "1521",
+    "protocol": "Oracle",
+    "hint": "Oracle Database - '1521' for Oracle database connections"
+  },
+  {
+    "port": "3389",
+    "protocol": "RDP",
+    "hint": "Remote Desktop Protocol - '3389' for remote Windows access"
+  },
+  {
+    "port": "5060",
+    "protocol": "SIP",
+    "hint": "Session Initiation Protocol - '5060' for VoIP calls"
+  },
+  {
+    "port": "5061",
+    "protocol": "SIP (TLS)",
+    "hint": "SIP over TLS - '5061' for secure VoIP"
+  },
+  {
+    "port": "5985",
+    "protocol": "WinRM HTTP",
+    "hint": "Windows Remote Management - '5985' for HTTP remote management"
+  },
+  {
+    "port": "5986",
+    "protocol": "WinRM HTTPS",
+    "hint": "Windows Remote Management Secure - '5986' for HTTPS remote management"
+  },
+  {
+    "port": "8080",
+    "protocol": "HTTP Alternate",
+    "hint": "HTTP Alternate - '8080' is commonly used as an alternative to port 80"
+  }
+]

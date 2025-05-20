@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, jsonify, send_from_directory
+from flask import Blueprint, render_template, jsonify
 import json
 import os
 
@@ -27,8 +27,3 @@ def get_questions():
     with open(questions_file, 'r') as f:
         questions = json.load(f)
     return jsonify(questions)
-
-@bp.route('/static/js/questions.json')
-def questions_js():
-    # Serve the questions JSON for direct access from JavaScript
-    return send_from_directory(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'app', 'data'), 'questions.json')
