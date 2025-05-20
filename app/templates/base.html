@@ -23,11 +23,11 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-    
-    <footer>
+      <footer>
         <p>&copy; 2025 Security+ Ports & Protocols Quiz</p>
     </footer>
     
+    <script src="{{ url_for('static', filename='js/storage.js') }}"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -1,4 +1,6 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, jsonify, send_from_directory
+import json
+import os
 
 bp = Blueprint('main', __name__)
 
@@ -17,3 +19,16 @@ def mcq():
 @bp.route('/memory')
 def memory():
     return render_template('memory.html')
+
+@bp.route('/api/questions')
+def get_questions():
+    # Load questions from JSON file
+    questions_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'app', 'data', 'questions.json')
+    with open(questions_file, 'r') as f:
+        questions = json.load(f)
+    return jsonify(questions)
+
+@bp.route('/static/js/questions.json')
+def questions_js():
+    # Serve the questions JSON for direct access from JavaScript
+    return send_from_directory(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'app', 'data'), 'questions.json')
