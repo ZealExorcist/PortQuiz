@@ -1,0 +1,3 @@
+@echo off
+echo Starting Security+ Ports Quiz Application in production mode...
+python serve.py

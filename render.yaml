@@ -1,0 +1,15 @@
+# Render deployment configuration
+services:
+  - type: web
+    name: port-quiz
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -c gunicorn_config.py wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0  # Use the version that matches your local environment
+    healthCheckPath: /
+    autoDeploy: true
+    plan: free  # Specify the plan type (free, starter, etc.)
+    numInstances: 1
+    region: oregon  # Choose your preferred region
