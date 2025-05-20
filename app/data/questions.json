@@ -2,181 +2,170 @@
   {
     "port": "20",
     "protocol": "FTP-DATA",
-    "hint": "File Transfer Protocol Data Channel - Think '20' files being transferred"
+    "hint": "Twenty trucks delivering files (FTP Data)"
   },
   {
     "port": "21",
     "protocol": "FTP",
-    "hint": "File Transfer Protocol Control Channel - '21' is one more than 20, handles FTP commands"
-  },
-  {
+    "hint": "Twenty-ONE commands to transfer files"
+  },  {
     "port": "22",
     "protocol": "SSH",
-    "hint": "Secure Shell - '22' looks like a secure tunnel"
+    "hint": "TWO TWO = Secure SHell"
   },
   {
     "port": "23",
     "protocol": "TELNET",
-    "hint": "Telnet (unencrypted remote access) - '23' comes right after SSH (not secure!)"
+    "hint": "TwenTEL-NET comes after SSH (but no security!)"
   },
   {
     "port": "25",
     "protocol": "SMTP",
-    "hint": "Simple Mail Transfer Protocol - '25' letters in the mail"
-  },
-  {
+    "hint": "Send Mail To People (25 letters in mailbox)"
+  },  {
     "port": "53",
     "protocol": "DNS",
-    "hint": "Domain Name System - '53' like finding an address in a phonebook"
+    "hint": "5+3=8, like DNS = Domain Name Search"
   },
   {
     "port": "67",
     "protocol": "DHCP (Server)",
-    "hint": "DHCP Server - '67' is when the server gives out IP addresses"
+    "hint": "Server gives Dynamic Host Config (67 looks like 'gS' for 'giving Server')"
   },
   {
     "port": "68",
     "protocol": "DHCP (Client)",
-    "hint": "DHCP Client - '68' is when the client receives an IP address"
-  },
-  {
+    "hint": "Client asks for IP (68 looks like 'gC' for 'getting Client')"
+  },  {
     "port": "69",
     "protocol": "TFTP",
-    "hint": "Trivial File Transfer Protocol - '69' is a simplified version of FTP"
+    "hint": "Tiny FTP - the number with a smile :) for a simpler protocol"
   },
   {
     "port": "80",
     "protocol": "HTTP",
-    "hint": "Hypertext Transfer Protocol - '80' for web browsing"
+    "hint": "H-T-T-P has 4 letters, 8×10=80, the web port"
   },
   {
     "port": "88",
     "protocol": "Kerberos",
-    "hint": "Kerberos Authentication - '88' looks like a key for authentication"
-  },
-  {
+    "hint": "88 looks like handcuffs - Kerberos secures/authenticates users"
+  },  {
     "port": "110",
     "protocol": "POP3",
-    "hint": "Post Office Protocol v3 - '110' for receiving email"
+    "hint": "110 looks like IO - Input/Output for mail (POP3)"
   },
   {
     "port": "119",
     "protocol": "NNTP",
-    "hint": "Network News Transfer Protocol - '119' for news groups"
+    "hint": "119 = News Network Transfer (almost 'nine-teen')"
   },
   {
     "port": "123",
     "protocol": "NTP",
-    "hint": "Network Time Protocol - '123' like counting time"
-  },
-  {
+    "hint": "1-2-3, tick-tock, Network Time Protocol"
+  },  {
     "port": "135",
     "protocol": "RPC",
-    "hint": "Remote Procedure Call - '135' for Windows communication"
+    "hint": "Remote PC Control with digits that add to 9 (1+3+5)"
   },
   {
     "port": "137-139",
     "protocol": "NetBIOS",
-    "hint": "NetBIOS - Range '137-139' for Windows networking"
+    "hint": "Windows Network Basic I/O System, consecutive ports"
   },
   {
     "port": "143",
     "protocol": "IMAP",
-    "hint": "Internet Message Access Protocol - '143' for advanced email retrieval"
-  },
-  {
+    "hint": "I'M Accessing Post-office (digits 1-4-3 look like I-M-P)"
+  },  {
     "port": "161",
     "protocol": "SNMP",
-    "hint": "Simple Network Management Protocol - '161' for network monitoring"
+    "hint": "Simple Network Management - 161 (first SixteeN Management Port)"
   },
   {
     "port": "162",
     "protocol": "SNMP Trap",
-    "hint": "SNMP Trap - '162' receives alerts from SNMP devices"
+    "hint": "SNMP alert TRAP - one higher than regular SNMP (161+1)"
   },
   {
     "port": "389",
     "protocol": "LDAP",
-    "hint": "Lightweight Directory Access Protocol - '389' for directory services"
-  },
-  {
+    "hint": "Lightweight Directory Access - 389 (Think 3-8-9 like L-D-P)"
+  },  {
     "port": "443",
     "protocol": "HTTPS",
-    "hint": "HTTP Secure - '443' for encrypted web browsing (think padlock icon)"
+    "hint": "4-4-3 = SSL for HTTP (looks like 'SSL' on a calculator)"
   },
   {
     "port": "445",
     "protocol": "SMB",
-    "hint": "Server Message Block - '445' for file sharing in Windows"
+    "hint": "Server Message Block - 445 (For Four Five = SMB)"
   },
   {
     "port": "464",
     "protocol": "Kerberos (password change)",
-    "hint": "Kerberos Password Change - '464' to reset your Kerberos password"
-  },
-  {
+    "hint": "Kerberos Password - 464 (sounds like 'for-six-four' = 'change password')"
+  },  {
     "port": "465",
     "protocol": "SMTPS",
-    "hint": "SMTP Secure - '465' for encrypted email sending"
+    "hint": "Secure Mail - 465 (add 400 to SMTP's port 65)"
   },
   {
     "port": "514",
     "protocol": "Syslog",
-    "hint": "Syslog - '514' for system logging"
+    "hint": "System LOG events - 514 (5-1-4 looks like S-L-Y for sysLY)"
   },
   {
     "port": "636",
     "protocol": "LDAPS",
-    "hint": "LDAP Secure - '636' for encrypted directory access"
-  },
-  {
+    "hint": "Secure directory lookup - 636 (add 247 to LDAP's port 389)"
+  },  {
     "port": "993",
     "protocol": "IMAPS",
-    "hint": "IMAP Secure - '993' for secure email retrieval"
+    "hint": "Secure IMAP - 993 (9-9-3 almost spells 'SSE' = Secure)"
   },
   {
     "port": "995",
     "protocol": "POP3S",
-    "hint": "POP3 Secure - '995' for secure email receiving"
+    "hint": "Secure POP3 - 995 (add 885 to POP3's port 110)"
   },
   {
     "port": "1433",
     "protocol": "MS SQL",
-    "hint": "Microsoft SQL Server - '1433' for database connections"
-  },
-  {
+    "hint": "Microsoft's SQL - One thousand + 433 (SQL has 3 letters)"
+  },  {
     "port": "1521",
     "protocol": "Oracle",
-    "hint": "Oracle Database - '1521' for Oracle database connections"
+    "hint": "O-R-A (1-5-21 or One-five-twentyone) for Oracle database"
   },
   {
     "port": "3389",
     "protocol": "RDP",
-    "hint": "Remote Desktop Protocol - '3389' for remote Windows access"
+    "hint": "Remote Desktop - 3389 (think 'RD-Viewing' = 3389)"
   },
   {
     "port": "5060",
     "protocol": "SIP",
-    "hint": "Session Initiation Protocol - '5060' for VoIP calls"
-  },
-  {
+    "hint": "Session Initiation Protocol - 5060 (SIxty = SIP)"
+  },  {
     "port": "5061",
     "protocol": "SIP (TLS)",
-    "hint": "SIP over TLS - '5061' for secure VoIP"
+    "hint": "Secure SIP - 5061 (one higher than regular SIP)"
   },
   {
     "port": "5985",
     "protocol": "WinRM HTTP",
-    "hint": "Windows Remote Management - '5985' for HTTP remote management"
+    "hint": "Windows Remote Management - 5985 (Five-9-Eight-5 = WiReMHttp)"
   },
   {
     "port": "5986",
     "protocol": "WinRM HTTPS",
-    "hint": "Windows Remote Management Secure - '5986' for HTTPS remote management"
+    "hint": "Secure Windows Remote Management - 5986 (one higher than HTTP version)"
   },
   {
     "port": "8080",
     "protocol": "HTTP Alternate",
-    "hint": "HTTP Alternate - '8080' is commonly used as an alternative to port 80"
+    "hint": "Alternative HTTP - 8080 (double the original HTTP port 80)"
   }
 ]

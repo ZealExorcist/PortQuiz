@@ -157,13 +157,19 @@ function renderGameBoard() {
         cardElement.className = 'memory-card';
         cardElement.dataset.id = card.id;
         
+        // Create front and back content
+        const cardContent = document.createElement('span');
+        
         // If card is matched or flipped, show its value
         if (card.isMatched || card.isFlipped) {
-            cardElement.textContent = card.value;
+            cardContent.textContent = card.value;
             cardElement.classList.add(card.isFlipped ? 'flipped' : 'matched');
         } else {
-            cardElement.textContent = '?';
+            cardContent.textContent = '?';
         }
+        
+        // Append content to card
+        cardElement.appendChild(cardContent);
         
         // Add click event listener
         cardElement.addEventListener('click', function() {

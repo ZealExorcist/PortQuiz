@@ -18,15 +18,19 @@
                 <li><a href="{{ url_for('main.get_questions') }}" target="_blank">Questions API</a></li>
             </ul>
         </nav>
+        <div class="theme-toggle">
+            <label for="dark-mode-toggle">Dark Mode</label>
+            <input type="checkbox" id="dark-mode-toggle">
+        </div>
     </header>
     
     <main>
         {% block content %}{% endblock %}
     </main>
       <footer>
-        <p>&copy; 2025 Security+ Ports & Protocols Quiz</p>
-    </footer>
+        <p>&copy; 2025 Security+ Ports & Protocols Quiz</p>    </footer>
     
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="{{ url_for('static', filename='js/storage.js') }}"></script>
     {% block scripts %}{% endblock %}
 </body>
