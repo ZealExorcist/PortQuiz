@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Fill-in-the-Blank Quiz | Security+ Ports & Protocols{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Fill-in-the-Blank Quiz</h2>
+    
+    <div class="quiz-options">
+        <div class="variation-selection">
+            <button id="port-to-protocol" class="btn active">Identify Protocol</button>
+            <button id="protocol-to-port" class="btn">Identify Port</button>
+        </div>
+    </div>
+    
+    <div id="quiz-container">
+        <div id="question-display">
+            <!-- Question will be displayed here -->
+            <p>Loading questions...</p>
+        </div>
+        
+        <div id="answer-input">
+            <input type="text" id="user-answer" placeholder="Your answer">
+            <button id="submit-answer" class="btn">Submit</button>
+        </div>
+        
+        <div id="feedback-display">
+            <!-- Feedback will be shown here -->
+        </div>
+        
+        <div id="hint-section">
+            <button id="show-hint" class="btn">Show Hint</button>
+            <div id="hint-text" class="hidden"></div>
+        </div>
+        
+        <button id="next-question" class="btn hidden">Next Question</button>
+    </div>
+    
+    <div id="score-display">
+        <p>Score: <span id="current-score">0</span> / <span id="total-questions">0</span></p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/fillblank.js') }}"></script>
+{% endblock %}

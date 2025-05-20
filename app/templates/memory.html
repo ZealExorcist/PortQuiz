@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Memory Match Game | Security+ Ports & Protocols{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Memory Match Game</h2>
+    
+    <div id="player-info">
+        <div id="current-player">Player 1's Turn</div>
+        <div id="player-scores">
+            <div id="player1-score">Player 1: 0 pairs</div>
+            <div id="player2-score" class="hidden">Player 2: 0 pairs</div>
+        </div>
+    </div>
+    
+    <div id="game-board">
+        <!-- Memory cards will be displayed here -->
+        <p>Loading game board...</p>
+    </div>
+    
+    <button id="restart-game" class="btn">Restart Game</button>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/memory.js') }}"></script>
+{% endblock %}

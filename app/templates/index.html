@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Welcome to the Security+ Ports & Protocols Quiz</h2>
+    <p>Select a quiz mode to begin:</p>
+    
+    <div class="mode-selection">
+        <div class="mode-card">
+            <h3>Fill-in-the-Blank</h3>
+            <p>Type in the correct port or protocol</p>
+            <a href="{{ url_for('main.fill_blank') }}" class="btn">Start Quiz</a>
+        </div>
+        
+        <div class="mode-card">
+            <h3>Multiple Choice</h3>
+            <p>Select the correct port or protocol</p>
+            <a href="{{ url_for('main.mcq') }}" class="btn">Start Quiz</a>
+        </div>
+        
+        <div class="mode-card">
+            <h3>Memory Match</h3>
+            <p>Match ports with their protocols</p>
+            <a href="{{ url_for('main.memory') }}" class="btn">Play Game</a>
+        </div>
+    </div>
+    
+    <div class="player-selection">
+        <h3>Player Mode</h3>
+        <div class="player-buttons">
+            <button id="single-player" class="btn active">Single Player</button>
+            <button id="two-player" class="btn">Two Players</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}

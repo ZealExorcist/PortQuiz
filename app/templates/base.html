@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Security+ Ports & Protocols Quiz{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Security+ Ports & Protocols Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('main.index') }}">Home</a></li>
+                <li><a href="{{ url_for('main.fill_blank') }}">Fill-in-Blank</a></li>
+                <li><a href="{{ url_for('main.mcq') }}">Multiple Choice</a></li>
+                <li><a href="{{ url_for('main.memory') }}">Memory Match</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Security+ Ports & Protocols Quiz</p>
+    </footer>
+    
+    {% block scripts %}{% endblock %}
+</body>
+</html>
