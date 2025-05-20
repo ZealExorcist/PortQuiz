@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     {% block extra_css %}{% endblock %}
 </head>
-<body>
-    <header>
+<body>    <header>
         <h1>Security+ Ports & Protocols Quiz</h1>
         <nav>
             <ul>
@@ -16,6 +15,7 @@
                 <li><a href="{{ url_for('main.fill_blank') }}">Fill-in-Blank</a></li>
                 <li><a href="{{ url_for('main.mcq') }}">Multiple Choice</a></li>
                 <li><a href="{{ url_for('main.memory') }}">Memory Match</a></li>
+                <li><a href="{{ url_for('main.get_questions') }}" target="_blank">Questions API</a></li>
             </ul>
         </nav>
     </header>

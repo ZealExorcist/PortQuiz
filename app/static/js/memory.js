@@ -25,6 +25,25 @@ document.addEventListener('DOMContentLoaded', function() {
         resetGame();
     });
     
+    // Add event listener for Reset Scores button
+    const resetScoresBtn = document.getElementById('reset-scores');
+    if (resetScoresBtn) {
+        resetScoresBtn.addEventListener('click', function() {
+            if (confirm('Are you sure you want to reset all scores for the Memory game?')) {
+                resetMemoryScores();
+                updateScoreDisplay();
+                alert('Scores have been reset!');
+            }
+        });
+    }
+    
+    // Update player mode display
+    const playerModeIndicator = document.getElementById('player-mode-indicator');
+    if (playerModeIndicator) {
+        const playerMode = localStorage.getItem('playerMode') || 'single';
+        playerModeIndicator.textContent = playerMode === 'single' ? 'Single Player Mode' : 'Two Player Mode';
+    }
+    
     // Initialize scores in localStorage
     initializeMemoryScores();
     

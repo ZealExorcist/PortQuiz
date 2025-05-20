@@ -6,6 +6,10 @@
 <div class="container">
     <h2>Memory Match Game</h2>
     
+    <div class="player-mode-display">
+        <span id="player-mode-indicator">Single Player Mode</span>
+    </div>
+    
     <div id="player-info">
         <div id="current-player">Player 1's Turn</div>
         <div id="player-scores">
@@ -19,7 +23,16 @@
         <p>Loading game board...</p>
     </div>
     
-    <button id="restart-game" class="btn">Restart Game</button>
+    <div class="controls">
+        <button id="restart-game" class="btn">Restart Game</button>
+        <button id="reset-scores" class="btn secondary">Reset Scores</button>
+    </div>
+    
+    <div class="game-instructions">
+        <h3>How to Play</h3>
+        <p>Find matching pairs of ports and protocols. Turn over two cards at a time. If they match (a port and its corresponding protocol), you score a point and the cards stay face up. If they don't match, they turn back over.</p>
+        <p>In two-player mode, players take turns. The player with the most pairs at the end wins!</p>
+    </div>
 </div>
 {% endblock %}
 

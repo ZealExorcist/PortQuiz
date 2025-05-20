@@ -54,6 +54,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener for Hint button
     hintButton.addEventListener('click', showHint);
     
+    // Add event listener for Reset Scores button
+    const resetScoresBtn = document.getElementById('reset-scores');
+    if (resetScoresBtn) {
+        resetScoresBtn.addEventListener('click', function() {
+            if (confirm('Are you sure you want to reset all scores for this quiz mode?')) {
+                resetScores(QUIZ_MODE);
+                updateScoreDisplay();
+                alert('Scores have been reset!');
+            }
+        });
+    }
+    
+    // Update player mode display
+    const playerModeIndicator = document.getElementById('player-mode-indicator');
+    if (playerModeIndicator) {
+        const playerMode = getPlayerMode();
+        playerModeIndicator.textContent = playerMode === 'single' ? 'Single Player Mode' : 'Two Player Mode';
+    }
+    
     // Initialize scores in localStorage
     initializeScores(QUIZ_MODE);
     
@@ -393,6 +412,23 @@ function updateScore(quizMode, isCorrect) {
         
         // Switch player after answering
         switchPlayer();
+    }
+}
+
+function resetScores(quizMode) {
+    const playerMode = getPlayerMode();
+    
+    if (playerMode === 'single') {
+        localStorage.setItem(`${quizMode}_score`, '0');
+        localStorage.setItem(`${quizMode}_total`, '0');
+    } else {
+        // Two-player mode
+        localStorage.setItem(`${quizMode}_score_p1`, '0');
+        localStorage.setItem(`${quizMode}_score_p2`, '0');
+        localStorage.setItem(`${quizMode}_total_p1`, '0');
+        localStorage.setItem(`${quizMode}_total_p2`, '0');
+        // Reset to player 1
+        localStorage.setItem('currentPlayer', '1');
     }
 }
 

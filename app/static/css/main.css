@@ -161,6 +161,51 @@ nav ul li a:hover {
     border-left: 3px solid #3498db;
 }
 
+.quiz-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.player-mode-display {
+    background-color: #f2f2f2;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn.secondary {
+    background-color: #7f8c8d;
+}
+
+.btn.secondary:hover {
+    background-color: #95a5a6;
+}
+
+/* Game Instructions */
+.game-instructions {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f4f7f9;
+    border-radius: 5px;
+    border-left: 3px solid #3498db;
+}
+
+.game-instructions h3 {
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.game-instructions p {
+    margin-bottom: 10px;
+}
+
 /* Multiple Choice Options */
 #options-container {
     margin-bottom: 20px;
